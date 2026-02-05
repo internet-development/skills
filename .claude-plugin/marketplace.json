@@ -1,0 +1,36 @@
+{
+  "name": "intdev-skills",
+  "owner": {
+    "name": "Internet Development Studio Company",
+    "email": "hello@internet.dev"
+  },
+  "metadata": {
+    "description": "Agent skills for INTDEV open source tools",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "intdev-tools",
+      "description": "Core development skills for building with INTDEV's open source stack: nextjs-sass-starter scaffolding, SRCL (Sacred Computer) components, Server Mono typography, INTDEV brand guidelines, and api.internet.dev integration",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/nextjs-sass-starter",
+        "./skills/sacred-computer",
+        "./skills/intdev-brand-guidelines",
+        "./skills/intdev-api"
+      ]
+    },
+    {
+      "name": "intdev-ops",
+      "description": "Operational skills for deploying, maintaining, and planning work on INTDEV projects: deployment patterns, WCAG accessibility compliance, and Daedalus AI planning with Talos agent orchestration",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/intdev-deployment",
+        "./skills/intdev-accessibility",
+        "./skills/daedalus"
+      ]
+    }
+  ]
+}
