@@ -18,6 +18,14 @@
 
 ## Usage
 
+### Ask Your Agent
+
+The easiest way to install a skill is to give your agent the link and ask it to set it up. For example:
+
+> Install this skill into my project: https://github.com/internet-development/skills/tree/main/skills/server-mono
+
+Your agent will fetch the `SKILL.md`, create the directory, and place it in the right location.
+
 ### Individual Skills
 
 Each skill is a self-contained folder. Download just the ones you need directly into your project or global skills directory:
