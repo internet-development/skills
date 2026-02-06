@@ -2,8 +2,6 @@
 
 [Agent Skills](https://agentskills.io) for the [Internet Development Studio Company](https://internet.dev) open source tools. These skills teach AI agents how to build with INTDEV's stack — from scaffolding a new project with [nextjs-sass-starter](https://github.com/internet-development/nextjs-sass-starter) to deploying it on Render.
 
-## Skills
-
 | Skill | Description |
 |-------|-------------|
 | [nextjs-sass-starter](./skills/nextjs-sass-starter/) | Scaffold and build projects using INTDEV's full Next.js + SASS + TypeScript template |
