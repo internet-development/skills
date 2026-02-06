@@ -24,7 +24,6 @@ Each skill is a self-contained folder. Download just the ones you need directly 
 
 ```bash
 # Download a single skill into your project
-mkdir -p .claude/skills
 curl -sL https://raw.githubusercontent.com/internet-development/skills/main/skills/server-mono/SKILL.md \
   --create-dirs -o .claude/skills/server-mono/SKILL.md
 
