@@ -33,12 +33,10 @@ Then install a skill bundle:
 /plugin install intdev-ops@intdev-skills
 ```
 
-Or browse and install individual skills:
+Skills are grouped into two bundles:
 
-1. Select `Browse and install plugins`
-2. Select `intdev-skills`
-3. Choose `intdev-tools` or `intdev-ops`
-4. Select `Install now`
+- **`intdev-tools`** — nextjs-sass-starter, nextjs-sass-base, sacred-computer, server-mono, intdev-brand-guidelines, intdev-api
+- **`intdev-ops`** — intdev-deployment, intdev-accessibility, daedalus
 
 ### OpenCode
 
