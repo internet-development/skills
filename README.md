@@ -31,11 +31,8 @@ Your agent will fetch the `SKILL.md`, create the directory, and place it in the 
 Use the [Vercel Skills CLI](https://github.com/vercel-labs/skills) to install skills to any supported agent — Claude Code, OpenCode, Codex, Cursor, and [35+ more](https://github.com/vercel-labs/skills#supported-agents):
 
 ```bash
-# Install all skills
+# Interactive — browse and select skills and agents
 npx skills add internet-development/skills
-
-# List available skills first
-npx skills add internet-development/skills --list
 
 # Install specific skills
 npx skills add internet-development/skills --skill server-mono --skill sacred-computer
@@ -45,6 +42,12 @@ npx skills add internet-development/skills --skill server-mono -a claude-code
 
 # Install globally (available across all projects)
 npx skills add internet-development/skills --skill server-mono -g
+
+# Install all skills to all detected agents without prompts
+npx skills add internet-development/skills --all
+
+# List available skills without installing
+npx skills add internet-development/skills --list
 ```
 
 ### Individual Skills
