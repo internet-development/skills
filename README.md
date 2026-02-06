@@ -18,9 +18,36 @@
 
 ## Usage
 
-### Claude Code (Plugin Marketplace)
+### Individual Skills
 
-Install all skills at once via the plugin marketplace:
+Each skill is a self-contained folder. Download just the ones you need directly into your project or global skills directory:
+
+```bash
+# Download a single skill into your project
+mkdir -p .claude/skills
+curl -sL https://raw.githubusercontent.com/internet-development/skills/main/skills/server-mono/SKILL.md \
+  --create-dirs -o .claude/skills/server-mono/SKILL.md
+
+# Or download to your global skills (applies to all projects)
+curl -sL https://raw.githubusercontent.com/internet-development/skills/main/skills/server-mono/SKILL.md \
+  --create-dirs -o ~/.claude/skills/server-mono/SKILL.md
+```
+
+This works with Claude Code (`.claude/skills/`), OpenCode (`.opencode/skills/`), and any tool that supports the [Agent Skills specification](https://agentskills.io/specification).
+
+For skills with reference files (like `sacred-computer`), download the whole folder:
+
+```bash
+# Using git sparse checkout for a single skill
+git clone --no-checkout --depth 1 https://github.com/internet-development/skills.git /tmp/intdev-skills
+cd /tmp/intdev-skills && git sparse-checkout set skills/sacred-computer && git checkout
+cp -r /tmp/intdev-skills/skills/sacred-computer .claude/skills/
+rm -rf /tmp/intdev-skills
+```
+
+### All Skills (Plugin Marketplace)
+
+Install everything at once via the Claude Code plugin marketplace:
 
 ```
 /plugin marketplace add internet-development/skills
@@ -32,24 +59,6 @@ Skills are grouped into two bundles:
 
 - **`intdev-tools`** — nextjs-sass-starter, nextjs-sass-base, sacred-computer, server-mono, intdev-brand-guidelines, intdev-api
 - **`intdev-ops`** — intdev-deployment, intdev-accessibility, daedalus
-
-### Claude Code / OpenCode / Any Agent (Individual Skills)
-
-To install individual skills, clone this repo and copy or symlink just the ones you need into your project or global skills directory:
-
-```bash
-git clone https://github.com/internet-development/skills.git ~/intdev-skills
-
-# Project-level (applies to one project)
-mkdir -p .claude/skills
-ln -s ~/intdev-skills/skills/server-mono .claude/skills/
-ln -s ~/intdev-skills/skills/sacred-computer .claude/skills/
-
-# User-level (applies to all your projects)
-ln -s ~/intdev-skills/skills/server-mono ~/.claude/skills/
-```
-
-This works with Claude Code (`.claude/skills/`), OpenCode (`.opencode/skills/`), and any tool that supports the [Agent Skills specification](https://agentskills.io/specification). Each skill is a self-contained folder with a `SKILL.md` file.
 
 ## Creating a Skill
 
