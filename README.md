@@ -26,6 +26,27 @@ Install this skill into my project: https://github.com/internet-development/skil
 
 Your agent will fetch the `SKILL.md`, create the directory, and place it in the right location.
 
+### Skills CLI
+
+Use the [Vercel Skills CLI](https://github.com/vercel-labs/skills) to install skills to any supported agent — Claude Code, OpenCode, Codex, Cursor, and [35+ more](https://github.com/vercel-labs/skills#supported-agents):
+
+```bash
+# Install all skills
+npx skills add internet-development/skills
+
+# List available skills first
+npx skills add internet-development/skills --list
+
+# Install specific skills
+npx skills add internet-development/skills --skill server-mono --skill sacred-computer
+
+# Install to a specific agent
+npx skills add internet-development/skills --skill server-mono -a claude-code
+
+# Install globally (available across all projects)
+npx skills add internet-development/skills --skill server-mono -g
+```
+
 ### Individual Skills
 
 Each skill is a self-contained folder. Download just the ones you need directly into your project or global skills directory:
