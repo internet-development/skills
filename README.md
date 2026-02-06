@@ -22,7 +22,9 @@
 
 The easiest way to install a skill is to give your agent the link and ask it to set it up. For example:
 
-> Install this skill into my project: https://github.com/internet-development/skills/tree/main/skills/server-mono
+```
+Install this skill into my project: https://github.com/internet-development/skills/tree/main/skills/server-mono
+```
 
 Your agent will fetch the `SKILL.md`, create the directory, and place it in the right location.
 
