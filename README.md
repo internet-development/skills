@@ -18,17 +18,12 @@
 
 ## Usage
 
-### Claude Code
+### Claude Code (Plugin Marketplace)
 
-Register this repository as a Claude Code Plugin marketplace:
+Install all skills at once via the plugin marketplace:
 
 ```
 /plugin marketplace add internet-development/skills
-```
-
-Then install a skill bundle:
-
-```
 /plugin install intdev-tools@intdev-skills
 /plugin install intdev-ops@intdev-skills
 ```
@@ -38,20 +33,23 @@ Skills are grouped into two bundles:
 - **`intdev-tools`** — nextjs-sass-starter, nextjs-sass-base, sacred-computer, server-mono, intdev-brand-guidelines, intdev-api
 - **`intdev-ops`** — intdev-deployment, intdev-accessibility, daedalus
 
-### OpenCode
+### Claude Code / OpenCode / Any Agent (Individual Skills)
 
-OpenCode discovers skills from `.opencode/skills/`, `.claude/skills/`, or `.agents/skills/` directories. Clone this repo and symlink the skills you want:
+To install individual skills, clone this repo and copy or symlink just the ones you need into your project or global skills directory:
 
 ```bash
-# From your project root
-mkdir -p .opencode/skills
-ln -s /path/to/skills/skills/nextjs-sass-starter .opencode/skills/
-ln -s /path/to/skills/skills/sacred-computer .opencode/skills/
+git clone https://github.com/internet-development/skills.git ~/intdev-skills
+
+# Project-level (applies to one project)
+mkdir -p .claude/skills
+ln -s ~/intdev-skills/skills/server-mono .claude/skills/
+ln -s ~/intdev-skills/skills/sacred-computer .claude/skills/
+
+# User-level (applies to all your projects)
+ln -s ~/intdev-skills/skills/server-mono ~/.claude/skills/
 ```
 
-### Other Agent Skills-compatible tools
-
-Any tool that supports the [Agent Skills specification](https://agentskills.io/specification) can use these skills. Each skill is a self-contained folder with a `SKILL.md` file containing YAML frontmatter and markdown instructions.
+This works with Claude Code (`.claude/skills/`), OpenCode (`.opencode/skills/`), and any tool that supports the [Agent Skills specification](https://agentskills.io/specification). Each skill is a self-contained folder with a `SKILL.md` file.
 
 ## Creating a Skill
 
