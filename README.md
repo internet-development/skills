@@ -26,7 +26,7 @@ Install this skill into my project: https://github.com/internet-development/skil
 
 Your agent will fetch the `SKILL.md`, create the directory, and place it in the right location.
 
-### Skills CLI
+### Skills CLI (Recommended)
 
 Use the [Vercel Skills CLI](https://github.com/vercel-labs/skills) to install skills to any supported agent — Claude Code, OpenCode, Codex, Cursor, and [35+ more](https://github.com/vercel-labs/skills#supported-agents):
 
