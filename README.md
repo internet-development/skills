@@ -34,14 +34,12 @@ curl -sL https://raw.githubusercontent.com/internet-development/skills/main/skil
 
 This works with Claude Code (`.claude/skills/`), OpenCode (`.opencode/skills/`), and any tool that supports the [Agent Skills specification](https://agentskills.io/specification).
 
-For skills with reference files (like `sacred-computer`), download the whole folder:
+For skills with reference files (like `sacred-computer`), extract the folder from the repo tarball:
 
 ```bash
-# Using git sparse checkout for a single skill
-git clone --no-checkout --depth 1 https://github.com/internet-development/skills.git /tmp/intdev-skills
-cd /tmp/intdev-skills && git sparse-checkout set skills/sacred-computer && git checkout
-cp -r /tmp/intdev-skills/skills/sacred-computer .claude/skills/
-rm -rf /tmp/intdev-skills
+curl -sL https://github.com/internet-development/skills/archive/refs/heads/main.tar.gz \
+  | tar xz --strip-components=2 skills-main/skills/sacred-computer
+mv sacred-computer .claude/skills/
 ```
 
 ### All Skills (Plugin Marketplace)
