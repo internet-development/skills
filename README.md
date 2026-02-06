@@ -6,9 +6,11 @@
 
 | Skill | Description |
 |-------|-------------|
-| [nextjs-sass-starter](./skills/nextjs-sass-starter/) | Scaffold and build projects using INTDEV's Next.js + SASS + TypeScript template |
+| [nextjs-sass-starter](./skills/nextjs-sass-starter/) | Scaffold and build projects using INTDEV's full Next.js + SASS + TypeScript template |
+| [nextjs-sass-base](./skills/nextjs-sass-base/) | Scaffold minimal projects with the lightweight Next.js + SASS base template |
 | [sacred-computer](./skills/sacred-computer/) | Build UIs with SRCL React components and terminal aesthetics |
-| [intdev-brand-guidelines](./skills/intdev-brand-guidelines/) | Apply INTDEV's visual identity — Server Mono, brand colors, SVG logos |
+| [server-mono](./skills/server-mono/) | Set up and use Server Mono, INTDEV's open-source monospace typeface |
+| [intdev-brand-guidelines](./skills/intdev-brand-guidelines/) | Apply INTDEV's visual identity — colors, themes, typography, SVG logos |
 | [intdev-api](./skills/intdev-api/) | Integrate with api.internet.dev for auth, payments, data, and organizations |
 | [intdev-deployment](./skills/intdev-deployment/) | Deploy and maintain INTDEV websites on Render, Vercel, and AWS |
 | [intdev-accessibility](./skills/intdev-accessibility/) | Build WCAG 2.1 AA compliant interfaces following INTDEV's approach |

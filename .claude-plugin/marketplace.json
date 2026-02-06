@@ -16,7 +16,9 @@
       "strict": false,
       "skills": [
         "./skills/nextjs-sass-starter",
+        "./skills/nextjs-sass-base",
         "./skills/sacred-computer",
+        "./skills/server-mono",
         "./skills/intdev-brand-guidelines",
         "./skills/intdev-api"
       ]
