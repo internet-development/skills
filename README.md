@@ -9,6 +9,7 @@
 | [sacred-computer](./skills/sacred-computer/) | Build UIs with SRCL React components and terminal aesthetics |
 | [server-mono](./skills/server-mono/) | Set up and use Server Mono, INTDEV's open-source monospace typeface |
 | [intdev-brand-guidelines](./skills/intdev-brand-guidelines/) | Apply INTDEV's visual identity — colors, themes, typography, SVG logos |
+| [intdev-code-conventions](./skills/intdev-code-conventions/) | Write code following INTDEV conventions — commenting, file org, CSS, React, TypeScript |
 | [intdev-api](./skills/intdev-api/) | Integrate with api.internet.dev for auth, payments, data, and organizations |
 | [intdev-deployment](./skills/intdev-deployment/) | Deploy and maintain INTDEV websites on Render, Vercel, and AWS |
 | [intdev-accessibility](./skills/intdev-accessibility/) | Build WCAG 2.1 AA compliant interfaces following INTDEV's approach |
@@ -31,7 +32,7 @@ Your agent will fetch the `SKILL.md`, create the directory, and place it in the 
 Use the [Vercel Skills CLI](https://github.com/vercel-labs/skills) to install skills to any supported agent — Claude Code, OpenCode, Codex, Cursor, and [35+ more](https://github.com/vercel-labs/skills#supported-agents):
 
 ```bash
-# Interactive — browse and select skills and agents
+# Interactive — browse and select skills
 npx skills add internet-development/skills
 
 # Install specific skills
@@ -81,13 +82,15 @@ Install everything at once via the Claude Code plugin marketplace:
 ```
 /plugin marketplace add internet-development/skills
 /plugin install intdev-tools@intdev-skills
+/plugin install intdev-standards@intdev-skills
 /plugin install intdev-ops@intdev-skills
 ```
 
-Skills are grouped into two bundles:
+Skills are grouped into three bundles:
 
-- **`intdev-tools`** — nextjs-sass-starter, nextjs-sass-base, sacred-computer, server-mono, intdev-brand-guidelines, intdev-api
-- **`intdev-ops`** — intdev-deployment, intdev-accessibility, daedalus
+- **`intdev-tools`** — nextjs-sass-starter, nextjs-sass-base, sacred-computer, server-mono, intdev-api
+- **`intdev-standards`** — intdev-brand-guidelines, intdev-code-conventions, intdev-accessibility
+- **`intdev-ops`** — intdev-deployment, daedalus
 
 ## Creating a Skill
 
