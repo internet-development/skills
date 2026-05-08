@@ -11,15 +11,15 @@ Comments explain **why**, never **what**. If the code needs a comment to explain
 Rationale comments. Explain a non-obvious decision, constraint, or workaround.
 
 ```typescript
-// NOTE(jimmylee): We vendor this module because the npm package pulls in 14 transitive dependencies.
+// NOTE(@jimmylee): We vendor this module because the npm package pulls in 14 transitive dependencies.
 ```
 
 ```typescript
-// NOTE(caidanw): Safari doesn't support this API before 16.4, so we fall back to polling.
+// NOTE(@caidanw): Safari doesn't support this API before 16.4, so we fall back to polling.
 ```
 
 ```css
-/* NOTE(jimmylee): Using box-shadow instead of border to avoid layout shift on focus. */
+/* NOTE(@jimmylee): Using box-shadow instead of border to avoid layout shift on focus. */
 ```
 
 ### `TODO(@handle)`
@@ -27,12 +27,12 @@ Rationale comments. Explain a non-obvious decision, constraint, or workaround.
 Planned work. Always attributed to a person who owns the follow-up.
 
 ```typescript
-// TODO(jimmylee)
+// TODO(@jimmylee)
 // Obviously delete this once we implement a theme picker modal.
 ```
 
 ```typescript
-// TODO(caidanw): Replace with proper rate limiting once we move to Redis.
+// TODO(@caidanw): Replace with proper rate limiting once we move to Redis.
 ```
 
 ## What NOT to Comment

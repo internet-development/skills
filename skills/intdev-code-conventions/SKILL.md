@@ -34,8 +34,8 @@ These are the conventions agents must follow immediately. Load reference files f
 ### Commenting
 
 ```typescript
-// NOTE(jimmylee): Explanation of WHY, not WHAT.
-// TODO(caidanw): Planned work with owner attribution.
+// NOTE(@jimmylee): Explanation of WHY, not WHAT.
+// TODO(@caidanw): Planned work with owner attribution.
 ```
 
 No self-documenting comments. No commenting what code does — only why.
